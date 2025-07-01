@@ -1,0 +1,130 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Background Video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -2;
+  object-fit: cover;
+}
+
+/* Mouse Canvas */
+#mouse-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Overlay */
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 1rem;
+}
+
+/* Navigation */
+nav .nav-link {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav .nav-link:hover {
+  color: #00d9ff;
+  transform: scale(1.1);
+}
+
+/* Toggle Button */
+#dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  z-index: 99;
+  transition: background 0.3s, color 0.3s;
+}
+#dark-toggle:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Hero */
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Section Styling */
+section {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Project List Styling */
+.project-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 217, 255, 0.3);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  color: #ffffff;
+  background-color: #000000;
+}
+body.dark-mode section {
+  background: rgba(255, 255, 255, 0.05);
+}
+body.dark-mode nav .nav-link:hover {
+  color: #66ccff;
+}
+body.dark-mode #dark-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  color: #00ccff;
+}
+
+#contact .bi-instagram {
+  color: #E1306C;
+}
+#contact .bi-instagram:hover {
+  color: #fd1d1d;
+}
